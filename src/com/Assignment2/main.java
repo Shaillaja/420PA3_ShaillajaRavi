@@ -25,5 +25,12 @@ public class main {
         bullet.shoot(wall);
         bullet.shoot(player);
 
+        //ex4
+        PayrollSystem payroll = new PayrollSystem();
+        payroll.addPayable(new Employee(75000.0));
+        payroll.addPayable(new Freelancer(40, 50));
+        payroll.addPayable(new Employee(45000.0));
+        payroll.addPayable(new Freelancer(20, 40));
+        payroll.displayPayroll();
     }
 }
